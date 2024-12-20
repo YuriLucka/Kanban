@@ -25,11 +25,11 @@ namespace Kanban.Models
 
         // Relacionamento
         public virtual Usuario Usuario { get; set; }
-        public virtual StatusTarefa StatusTarefa { get; set; }
+        public virtual StatusTarefa Status { get; set; }
         public virtual Prioridade Prioridade { get; set; }
-        public virtual ICollection<ResponsavelTarefa> UsuariosResponsaveis { get; set; }
-        public virtual ICollection<AreaTarefa> AreasTarefas { get; set; }
+        public virtual ICollection<ResponsavelTarefa> Responsaveis { get; set; }
+        public virtual ICollection<AreaTarefa> Areas { get; set; }
         public virtual ICollection<Comentario> Comentarios { get; set; }
-        public virtual ICollection<Registro> Registro { get; set; }
+        public virtual ICollection<Registro> Registros { get; set; }
     }
 }
