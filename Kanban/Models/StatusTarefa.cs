@@ -1,5 +1,8 @@
-﻿namespace Kanban.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Kanban.Models
 {
+    [Table("StatusTarefa")]
     public class StatusTarefa
     {
         // Identificador

@@ -11,16 +11,24 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
         <div class="container">
-            @Html.ActionLink("Nome do aplicativo", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            @Html.ActionLink("Kanban", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar a navegação" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
                 <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Página Inicial", "Index", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Sobre", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Contato", "Contact", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Usuarios", "Index", "Usuario", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Areas", "Index", "Area", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("User/Area", "Index", "UsuarioArea", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Tarefas", "Index", "Tarefa", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Responsável/Tarefa", "Index", "ResponsavelTarefa", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Tipo/Responsabilidade", "Index", "Responsabilidade", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Status/Tarefa", "Index", "StatusTarefa", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Area/Tarefa", "Index", "AreaTarefa", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Prioridade/Tarefa", "Index", "Prioridade", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Comentários", "Index", "Comentario", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Registros", "Index", "Registro", new { area = "" }, new { @class = "nav-link" })</li>
                 </ul>
             </div>
         </div>

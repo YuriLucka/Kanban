@@ -127,7 +127,18 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AreaController.cs" />
+    <Compile Include="Controllers\AreaTarefaController.cs" />
+    <Compile Include="Controllers\ComentarioController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\PrioridadeController.cs" />
+    <Compile Include="Controllers\RegistroController.cs" />
+    <Compile Include="Controllers\ResponsabilidadeController.cs" />
+    <Compile Include="Controllers\ResponsavelTarefaController.cs" />
+    <Compile Include="Controllers\StatusTarefaController.cs" />
+    <Compile Include="Controllers\TarefaController.cs" />
+    <Compile Include="Controllers\UsuarioAreaController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
     <Compile Include="DAL\KanbanContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -135,6 +146,42 @@
     <Compile Include="Migrations\202412201623309_Initial.cs" />
     <Compile Include="Migrations\202412201623309_Initial.Designer.cs">
       <DependentUpon>202412201623309_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412201638057_AlterTables.cs" />
+    <Compile Include="Migrations\202412201638057_AlterTables.Designer.cs">
+      <DependentUpon>202412201638057_AlterTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412201736540_AlterTables1.cs" />
+    <Compile Include="Migrations\202412201736540_AlterTables1.Designer.cs">
+      <DependentUpon>202412201736540_AlterTables1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412201738332_AlterTableResponsavelTarefa.cs" />
+    <Compile Include="Migrations\202412201738332_AlterTableResponsavelTarefa.Designer.cs">
+      <DependentUpon>202412201738332_AlterTableResponsavelTarefa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412201800175_AlterTableTarefa.cs" />
+    <Compile Include="Migrations\202412201800175_AlterTableTarefa.Designer.cs">
+      <DependentUpon>202412201800175_AlterTableTarefa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412201816580_AlterTableRegistro.cs" />
+    <Compile Include="Migrations\202412201816580_AlterTableRegistro.Designer.cs">
+      <DependentUpon>202412201816580_AlterTableRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412201840311_AlterTableRegistro1.cs" />
+    <Compile Include="Migrations\202412201840311_AlterTableRegistro1.Designer.cs">
+      <DependentUpon>202412201840311_AlterTableRegistro1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412201848583_AlterTableRegistro2.cs" />
+    <Compile Include="Migrations\202412201848583_AlterTableRegistro2.Designer.cs">
+      <DependentUpon>202412201848583_AlterTableRegistro2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412201858323_AlterTableRegistro3.cs" />
+    <Compile Include="Migrations\202412201858323_AlterTableRegistro3.Designer.cs">
+      <DependentUpon>202412201858323_AlterTableRegistro3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202412201901104_AlterTableRegistro4.cs" />
+    <Compile Include="Migrations\202412201901104_AlterTableRegistro4.Designer.cs">
+      <DependentUpon>202412201901104_AlterTableRegistro4.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Area.cs" />
@@ -201,6 +248,61 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\StatusTarefa\Create.cshtml" />
+    <Content Include="Views\StatusTarefa\Delete.cshtml" />
+    <Content Include="Views\StatusTarefa\Details.cshtml" />
+    <Content Include="Views\StatusTarefa\Edit.cshtml" />
+    <Content Include="Views\StatusTarefa\Index.cshtml" />
+    <Content Include="Views\Area\Create.cshtml" />
+    <Content Include="Views\Area\Delete.cshtml" />
+    <Content Include="Views\Area\Details.cshtml" />
+    <Content Include="Views\Area\Edit.cshtml" />
+    <Content Include="Views\Area\Index.cshtml" />
+    <Content Include="Views\Prioridade\Create.cshtml" />
+    <Content Include="Views\Prioridade\Delete.cshtml" />
+    <Content Include="Views\Prioridade\Details.cshtml" />
+    <Content Include="Views\Prioridade\Edit.cshtml" />
+    <Content Include="Views\Prioridade\Index.cshtml" />
+    <Content Include="Views\Usuario\Create.cshtml" />
+    <Content Include="Views\Usuario\Delete.cshtml" />
+    <Content Include="Views\Usuario\Details.cshtml" />
+    <Content Include="Views\Usuario\Edit.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\UsuarioArea\Create.cshtml" />
+    <Content Include="Views\UsuarioArea\Delete.cshtml" />
+    <Content Include="Views\UsuarioArea\Details.cshtml" />
+    <Content Include="Views\UsuarioArea\Edit.cshtml" />
+    <Content Include="Views\UsuarioArea\Index.cshtml" />
+    <Content Include="Views\Comentario\Create.cshtml" />
+    <Content Include="Views\Comentario\Delete.cshtml" />
+    <Content Include="Views\Comentario\Details.cshtml" />
+    <Content Include="Views\Comentario\Edit.cshtml" />
+    <Content Include="Views\Comentario\Index.cshtml" />
+    <Content Include="Views\AreaTarefa\Create.cshtml" />
+    <Content Include="Views\AreaTarefa\Delete.cshtml" />
+    <Content Include="Views\AreaTarefa\Details.cshtml" />
+    <Content Include="Views\AreaTarefa\Edit.cshtml" />
+    <Content Include="Views\AreaTarefa\Index.cshtml" />
+    <Content Include="Views\Responsabilidade\Create.cshtml" />
+    <Content Include="Views\Responsabilidade\Delete.cshtml" />
+    <Content Include="Views\Responsabilidade\Details.cshtml" />
+    <Content Include="Views\Responsabilidade\Edit.cshtml" />
+    <Content Include="Views\Responsabilidade\Index.cshtml" />
+    <Content Include="Views\ResponsavelTarefa\Create.cshtml" />
+    <Content Include="Views\ResponsavelTarefa\Delete.cshtml" />
+    <Content Include="Views\ResponsavelTarefa\Details.cshtml" />
+    <Content Include="Views\ResponsavelTarefa\Edit.cshtml" />
+    <Content Include="Views\ResponsavelTarefa\Index.cshtml" />
+    <Content Include="Views\Tarefa\Create.cshtml" />
+    <Content Include="Views\Tarefa\Delete.cshtml" />
+    <Content Include="Views\Tarefa\Details.cshtml" />
+    <Content Include="Views\Tarefa\Edit.cshtml" />
+    <Content Include="Views\Tarefa\Index.cshtml" />
+    <Content Include="Views\Registro\Create.cshtml" />
+    <Content Include="Views\Registro\Delete.cshtml" />
+    <Content Include="Views\Registro\Details.cshtml" />
+    <Content Include="Views\Registro\Edit.cshtml" />
+    <Content Include="Views\Registro\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -235,6 +337,33 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202412201623309_Initial.resx">
       <DependentUpon>202412201623309_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412201638057_AlterTables.resx">
+      <DependentUpon>202412201638057_AlterTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412201736540_AlterTables1.resx">
+      <DependentUpon>202412201736540_AlterTables1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412201738332_AlterTableResponsavelTarefa.resx">
+      <DependentUpon>202412201738332_AlterTableResponsavelTarefa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412201800175_AlterTableTarefa.resx">
+      <DependentUpon>202412201800175_AlterTableTarefa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412201816580_AlterTableRegistro.resx">
+      <DependentUpon>202412201816580_AlterTableRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412201840311_AlterTableRegistro1.resx">
+      <DependentUpon>202412201840311_AlterTableRegistro1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412201848583_AlterTableRegistro2.resx">
+      <DependentUpon>202412201848583_AlterTableRegistro2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412201858323_AlterTableRegistro3.resx">
+      <DependentUpon>202412201858323_AlterTableRegistro3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202412201901104_AlterTableRegistro4.resx">
+      <DependentUpon>202412201901104_AlterTableRegistro4.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

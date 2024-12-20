@@ -1,0 +1,42 @@
+﻿@model Kanban.Models.ResponsavelTarefa
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ResponsavelTarefa</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Responsabilidade.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Responsabilidade.Nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tarefa.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tarefa.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Usuario.Nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Usuario.Nome)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

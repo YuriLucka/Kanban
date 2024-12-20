@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Kanban.Models
 {
+    [Table("Tarefa")]
     public class Tarefa
     {
         // Identificador
@@ -12,9 +14,10 @@ namespace Kanban.Models
         [Display(Name = "Solicitante")]
         public int UsuarioID { get; set; }
         public int? StatusTarefaID { get; set; }
-        public int? NivelPrioridadeID { get; set; }
+        public int? PrioridadeID { get; set; }
 
         // Dados
+        public string Titulo { get; set; }
         public string Descricao { get; set; }
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}", ApplyFormatInEditMode = true)]
