@@ -1,9 +1,48 @@
 ﻿@{
     ViewBag.Title = "About";
 }
-<main aria-labelledby="title">
-    <h2 id="title">@ViewBag.Title.</h2>
-    <h3>@ViewBag.Message</h3>
 
-    <p>Use this area to provide additional information.</p>
+<main class="about-page">
+    <section class="hero-section">
+        <div class="container text-center py-5">
+            <h1 class="display-4">Sobre o Sistema Kanban</h1>
+            <p class="lead mt-3">Simplifique a gestão de tarefas e aumente a produtividade da sua equipe com o Kanban. Organize, colabore e conclua tarefas com eficiência e clareza.</p>
+        </div>
+    </section>
+
+    <section class="features-section py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Principais Funcionalidades</h2>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <i class="icon fa fa-tasks fa-3x text-primary mb-3"></i>
+                    <h3>Gestão de Tarefas</h3>
+                    <p>Crie, organize e acompanhe tarefas de forma intuitiva e eficaz.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="icon fa fa-users fa-3x text-success mb-3"></i>
+                    <h3>Colaboração em Equipe</h3>
+                    <p>Permita que várias pessoas contribuam para o sucesso de cada tarefa.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="icon fa fa-clock fa-3x text-warning mb-3"></i>
+                    <h3>Controle de Tempo</h3>
+                    <p>Acompanhe horas dedicadas às tarefas e otimize o tempo de sua equipe.</p>
+                </div>
+                <div class="col-md-3 text-center">
+                    <i class="icon fa fa-bar-chart fa-3x text-danger mb-3"></i>
+                    <h3>Relatórios Visuais</h3>
+                    <p>Obtenha insights detalhados com gráficos claros e personalizáveis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section text-white py-5" style="background-color: #007BFF;">
+        <div class="container text-center">
+            <h2 class="mb-4">Transforme sua Gestão de Tarefas</h2>
+            <p class="lead mb-4">Experimente o Kanban e veja como a organização e a eficiência podem impulsionar sua produtividade.</p>
+            <a href="@Url.Action("Index", "Home")" class="btn btn-light btn-lg">Saiba Mais</a>
+        </div>
+    </section>
 </main>
