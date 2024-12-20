@@ -15,6 +15,6 @@ namespace Kanban.Models
         // Relacionamento
         public virtual Usuario Usuario { get; set; }
         public virtual Tarefa Tarefa { get; set; }
-        public virtual TipoResponsabilidade TipoResponsabilidade { get; set; }
+        public virtual Responsabilidade Responsabilidade { get; set; }
     }
 }

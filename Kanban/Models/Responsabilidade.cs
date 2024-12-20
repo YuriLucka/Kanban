@@ -1,6 +1,6 @@
 ﻿namespace Kanban.Models
 {
-    public class TipoResponsabilidade
+    public class Responsabilidade
     {
         // Identificador
         public int ID { get; set; }

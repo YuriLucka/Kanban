@@ -132,7 +132,7 @@
     <Compile Include="Models\ResponsavelTarefa.cs" />
     <Compile Include="Models\StatusTarefa.cs" />
     <Compile Include="Models\Tarefa.cs" />
-    <Compile Include="Models\TipoResponsabilidade.cs" />
+    <Compile Include="Models\Responsabilidade.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\UsuarioArea.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
